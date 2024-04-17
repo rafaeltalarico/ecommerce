@@ -2,33 +2,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333; /* Cor de fundo da barra de navegação */
-  color: white; /* Cor do texto */
-  padding: 10px 20px; /* Espaçamento interno */
+  background-color: rgb(255, 255, 255, 1); 
+  
+  margin: 1.5rem; 
 }
 
 .store-name {
-  margin: 0; /* Remover margem padrão do h2 */
+  margin: 0; 
 }
 
 .menu-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0 5%;
 }
 
 .menu-list li {
-  margin-right: 20px; /* Espaçamento entre os itens do menu */
+  margin-right: 3rem; 
 }
 
 .icon {
-  margin-left: 20px; /* Espaçamento entre os ícones */
+  margin-left: 2rem; 
 }
 
 h3 {
-  text-align: center; /* Centraliza o texto horizontalmente */
-  margin-top: 20px;
+  text-align: center; 
+  margin: 5rem;
   font-family: poppins;
   font-size: 40px; 
 }
@@ -36,22 +36,46 @@ h3 {
 .image-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Adicione margem superior conforme necessário */
-}
-
-.image-container img {
-  margin: 0 5px; /* Adicione margem horizontal entre as imagens */
 }
 
 .image-item {
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
-  margin: 0 20px; /* Adiciona margem horizontal entre os itens */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; 
+  margin: 0 0.5rem; 
 }
 
 .image-products {
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
+}
+
+.product-with-discount {
+  position: relative; /* Define a posição relativa para que a posição absoluta da etiqueta seja em relação a este contêiner */
+}
+
+.new-product {
+  position: relative;
+}
+
+.discount-label {
+  position: absolute; /* Posicionamento absoluto para sobrepor a imagem */
+   /* Posiciona no topo da imagem */
+  margin: 1rem 0 0 70%; /* Posiciona no canto direito da imagem */
+  background-color: rgba(233, 113, 113, 1);
+  color: rgba(255, 255, 255, 1);; /* Cor do texto da etiqueta */
+  padding: 0.5rem;
+  border-radius: 50%; /* Formato de eclipse */
+}
+
+.new-label {
+  position: absolute; /* Posicionamento absoluto para sobrepor a imagem */
+   /* Posiciona no topo da imagem */
+  margin: 1rem 0 0 70%; /* Posiciona no canto direito da imagem */
+  background-color: rgba(46, 193, 172, 1);
+  color: rgba(255, 255, 255, 1);; /* Cor do texto da etiqueta */
+  padding: 0.5rem;
+  border-radius: 50%; /* Formato de eclipse */
 }
 
 .image-products img {
@@ -111,8 +135,8 @@ h3 {
 }
 
 .describes-infs {
-  display: flex; /* Define o display como flexível */
-  flex-direction: row; /* Define a direção do flex como linha (horizontal) */
+  display: flex; 
+  flex-direction: row; 
   justify-content: space-between; 
   margin: 2rem 4rem 0;
   padding: 2rem;
@@ -131,17 +155,62 @@ h3 {
 .shipping,
 .support {
   display: flex;
-  align-items: center;/* Alinha os itens verticalmente */
+  align-items: center;
 }
 
 .quality p,
 .protection p,
 .shipping p,
 .support p {
-  margin: 0 0; /* Adicione esta linha para ajustar as margens dos parágrafos */
+  margin: 0 0; 
 }
 
 
 .icone {
-  margin-right: 0.5rem; /* Adiciona espaço entre o ícone e o texto */
+  margin-right: 0.5rem; 
+}
+
+.principal {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;  
+  margin: 2rem 20% 0 3rem;
+  padding: 0 6rem 0 1rem;
+}
+
+.principal .funiro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-left: 3rem;
+}
+
+.gray-text {
+  color: rgba(159, 159, 159, 1);
+  font-weight: bold;
+}
+
+.gray-text-normal {
+  color: rgba(159, 159, 159, 1);
+
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: row; /* Alinha os elementos horizontalmente */
+   /* Alinha os elementos verticalmente */
+}
+
+.subscribe-container p {
+  margin-right: 1rem;
+  text-decoration: underline; /* Adiciona um espaçamento à direita entre os parágrafos */
+}
+
+.reserved {
+  border-top: 1px solid rgba(217, 217, 217, 1); /* Centraliza o texto */
+  margin: 2rem 3rem 0 3rem; /* Adiciona um espaçamento acima do texto */
 }

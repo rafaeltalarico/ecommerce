@@ -35,6 +35,7 @@ const NavigationMenu = () => {
           </ul>
         </div>
         <div className="right-side">
+          <span className="icon">👤</span>
           <span className="icon">❤️</span>
           <span className="icon">🔍</span>
           <span className="icon">🛒</span>
@@ -61,7 +62,10 @@ const NavigationMenu = () => {
       <div className="container-sales">
         <div className="image-products">
           <div className="products">
-            <img src={mesa} alt="Mesa" />
+            <div className="product-with-discount"> {/* Produto com desconto */}
+              <div className="discount-label">-30%</div> {/* Etiqueta de desconto */}
+              <img src={mesa} alt="Mesa" />
+            </div>
             <div className="product-details">
               <p><span className="bolds">Syltherine</span></p>
               <p>Stylish cafe chair</p>
@@ -77,7 +81,10 @@ const NavigationMenu = () => {
             </div>
           </div>
           <div className="products">
-            <img src={sofaGrande} alt="sofaGrande" />
+            <div className="product-with-discount"> {/* Produto com desconto */}
+              <div className="discount-label">-50%</div> {/* Etiqueta de desconto */}
+              <img src={sofaGrande} alt="sofaGrande" />
+            </div>
             <div className="product-details">
               <p><span className="bolds">Lolito</span></p>
               <p>Luxury big sofa</p>
@@ -85,7 +92,10 @@ const NavigationMenu = () => {
             </div>
           </div>
           <div className="products">
-            <img src={sofaSala} alt="sofaSala" />
+            <div className="new-product"> {/* Produtos novos */}
+              <div className="new-label">New</div> {/* Etiqueta de produto novo */}
+              <img src={sofaSala} alt="sofaSala" />
+            </div>
             <div className="product-details">
               <p><span className="bolds">Respira</span></p>
               <p>Outdoor bar table and stool</p>
@@ -103,7 +113,10 @@ const NavigationMenu = () => {
             </div>
           </div>
           <div className="products">
-            <img src={sofa} alt="Sofa" />
+            <div className="new-product"> {/* Produtos novos */}
+              <div className="new-label">New</div> {/* Etiqueta de produto novo */}
+              <img src={sofa} alt="Sofa" />
+            </div>
             <div className="product-details">
               <p><span className="bolds">Muggo</span></p>
               <p>Small mug</p>
@@ -111,7 +124,10 @@ const NavigationMenu = () => {
             </div>
           </div>
           <div className="products">
-            <img src={sofaGrande2} alt="sofaGrande2" />
+            <div className="product-with-discount"> {/* Produto com desconto */}
+              <div className="discount-label">-50%</div> {/* Etiqueta de desconto */}
+              <img src={sofaGrande2} alt="sofaGrande2" />
+            </div> 
             <div className="product-details">
               <p><span className="bolds">Pingky</span></p>
               <p>Cute bed set</p>
@@ -119,7 +135,10 @@ const NavigationMenu = () => {
             </div>
           </div>
           <div className="products">
-            <img src={sofaPequeno} alt="sofaPequeno" />
+            <div className="new-product"> {/* Produtos novos */}
+              <div className="new-label">New</div> {/* Etiqueta de produto novo */}
+              <img src={sofaPequeno} alt="sofaPequeno" />
+            </div>
             <div className="product-details">
               <p><span className="bolds">Potty</span></p>
               <p>Minimalist flower pot</p>
@@ -171,6 +190,39 @@ const NavigationMenu = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <div className="rodape">
+          <div className="principal">
+            <div className="funiro">
+              <p className="title">Funiro.</p>
+              <p className="gray-text-normal">400 University Drive Suite 200 Coral <br />Gables, <br />FL 33134 USA</p>
+            </div>
+            <div className="links">
+              <p className="gray-text">Links</p>
+              <p className="negrito">Home</p>
+              <p className="negrito">Shop</p>
+              <p className="negrito">About</p>
+              <p className="negrito">Contact</p>
+            </div>
+            <div className="help">
+              <p className="gray-text">Help</p>
+              <p className="negrito">Payment Options</p>
+              <p className="negrito">Returns</p>
+              <p className="negrito">Privacy Policies</p>
+            </div>
+            <div className="newsletter">
+              <p className="gray-text">Newsletter</p>
+              <div class="subscribe-container">
+                <p className="gray-text-normal">Enter Your Email Address</p>
+                <p className="negrito">SUBSCRIBE</p>
+              </div>
+            </div>
+          </div>
+          <div className="reserved">
+            <p>2023 furino. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
     </div>
 
   );
