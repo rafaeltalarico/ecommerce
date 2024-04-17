@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-menu {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: #333; /* Cor de fundo da barra de navegação */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+}
+
+.store-name {
+  margin: 0; /* Remover margem padrão do h2 */
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.icon {
+  margin-left: 20px; /* Espaçamento entre os ícones */
+}
+
+h3 {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin-top: 20px;
+  font-family: poppins;
+  font-size: 40px; 
+}
+
+.image-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px; /* Adicione margem superior conforme necessário */
 }
 
-.App-link {
-  color: #61dafb;
+.image-container img {
+  margin: 0 5px; /* Adicione margem horizontal entre as imagens */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-item {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  margin: 0 20px; /* Adiciona margem horizontal entre os itens */
+}
+
+.image-products {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.image-products img {
+  margin: 0 1rem;
+  
+}
+
+.product-details {
+  background-color: rgba(244, 245, 247, 1);
+  margin: 0 1rem 2rem;
+  
+}
+
+
+.image-products > .products > p:not(:has(span)) {
+  font-size: 14px;
+  
+}
+
+.risk {
+  text-decoration: line-through;
+  color: rgb(176, 176, 176, 1);
+  font-size: 14px;
+
+}
+
+.bolds {
+  font-weight: bold;
+  
+}
+
+.products {
+  
+  text-align: start;
+}
+
+.products p {
+  margin: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  border: 1px solid rgb(184, 142, 47, 1);
+  color: rgb(184, 142, 47, 1);
+  padding: 0.5rem 4rem;
+  background-color: transparent;
+}
+
+.container-infs {
+  
+  
+  background: rgba(250, 243, 234, 1)
+}
+
+.describes-infs {
+  display: flex; /* Define o display como flexível */
+  flex-direction: row; /* Define a direção do flex como linha (horizontal) */
+  justify-content: space-between; 
+  margin: 2rem 4rem 0;
+  padding: 2rem;
+  
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  
+  padding: 0;
+}
+
+.quality,
+.protection,
+.shipping,
+.support {
+  display: flex;
+  align-items: center;/* Alinha os itens verticalmente */
+}
+
+.quality p,
+.protection p,
+.shipping p,
+.support p {
+  margin: 0 0; /* Adicione esta linha para ajustar as margens dos parágrafos */
+}
+
+
+.icone {
+  margin-right: 0.5rem; /* Adiciona espaço entre o ícone e o texto */
 }
