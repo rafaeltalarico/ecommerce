@@ -1,0 +1,112 @@
+.pag-shop {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-shop {
+    position: relative;
+}
+  
+.shop-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+  
+.shop-content h3 {
+    margin: 0;
+    
+}
+  
+.shop-content p {
+    margin: 0;
+     
+}
+
+.new-label {
+    position: absolute; 
+    margin: 1rem 0 0 70%; 
+    background-color: rgba(46, 193, 172, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 0.5rem;
+    border-radius: 50%; 
+  }
+
+.container-filter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(249, 241, 231, 1);
+    margin-bottom: 4rem;
+}
+
+.faixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 5rem;
+    padding: 0.75rem;
+}
+
+.icon-filter {      
+    
+    display: flex; 
+    align-items: center; 
+    margin: 0 0.25rem 0 1rem;
+}
+
+.icon-filter img {
+    width: 16px; 
+    height: 16px; 
+}
+
+.icon-filter p {
+    margin-left: 0.5rem; 
+    
+}
+
+.results {
+    border-left: 2px solid rgba(159, 159, 159, 1);
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    margin-right: 10rem;
+}
+
+.showing {
+    margin-left: 10rem;
+}
+
+.number-results {
+    background-color: white;
+    margin: 1rem;
+    padding: 0.75rem;
+    color: rgba(159, 159, 159, 1);
+
+}
+
+.default {
+    background-color: white;
+    margin: 1rem;
+    padding: 0.75rem 5rem 0.75rem 0.75rem;
+    color: rgba(159, 159, 159, 1);
+}
+
+.pag-numbers {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.pagination-button {
+    background-color: rgba(249, 241, 231, 1);
+    margin: 0 1.5rem 0 1.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+
